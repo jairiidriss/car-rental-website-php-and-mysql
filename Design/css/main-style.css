@@ -1,0 +1,821 @@
+/*** START COMMONN STYLE ***/
+html
+{
+    scroll-behavior: smooth;
+}
+
+
+body
+{
+    font-family: "Work Sans", Helvetica, Arial, sans-serif;
+}
+
+a, a:focus, a:hover 
+{
+    text-decoration: none;
+    outline: 0;
+}
+
+h1, h2, h3, h4, h5, h6 
+{
+    color: #222222;
+    line-height: 1.2em !important;
+    margin-bottom: 0;
+    margin-top: 0;
+    font-weight: 600;
+}
+
+ul
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+ul > li
+{
+    list-style: none;
+}
+
+/*** END COMMONN STYLE ***/
+
+/*** START HEADER STYLE ***/
+
+.nav-header
+{
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+/* above navbar */
+
+.above_navbar 
+{
+    background: #000000;
+    color:white;
+    height:45px;
+}
+
+.above_navbar .bar_content
+{
+    overflow: hidden;
+    font-size: 12px;
+}
+
+.above_navbar .company_details 
+{
+    float: left;
+}
+
+.above_navbar .company_details ul
+{
+    list-style :none;
+    margin:0px;
+    padding:0px;
+}
+
+.above_navbar .company_details ul li
+{
+    display: inline-block;
+    line-height:45px;
+    margin-right: 10px;
+}
+
+.above_navbar .company_details ul li i
+{
+    color:#04dbc0;
+}
+
+.above_navbar .company_social
+{
+    float : right;
+}
+
+.above_navbar .company_social ul
+{
+    list-style :none;
+    margin:0px;
+    padding:0px;
+}
+
+.above_navbar .company_social ul li
+{
+    display: inline-block;
+    line-height:45px;
+}
+
+.above_navbar .company_social ul li a
+{
+    display: inline-block;
+    color: #fff;
+    padding: 0;
+    margin-left: 15px;
+    line-height: 45px;
+}
+
+/* navbar */
+@keyframes sticky-navbar 
+{
+    from {top: 45;}
+    to {top: 0;}
+}
+
+.sticky-navbar
+{
+    animation-name: sticky-navbar;
+    animation-duration: 1s;
+    background-color: #000000 !important;
+
+}
+
+.navbar
+{
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.navbar-light .navbar-toggler
+{
+    background-color: #f9f9ff;
+}
+
+.navbar-brand 
+{
+    font-family: "PT Sans Narrow";
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+}
+
+.navbar-light .navbar-brand
+{
+    color:white;
+}
+
+.navbar-brand:hover
+{
+    color:white;
+}
+
+.navbar-light .navbar-nav .active>.nav-link
+{
+    color:white;
+}
+
+.navbar-light .navbar-nav .nav-link
+{
+    color:white;
+}
+
+.navbar-light .navbar-nav .nav-link:hover
+{
+    color: #04DBC0;
+}
+
+/*** END HEADER STYLE ***/
+
+
+/*** START TITLE & TAGLINE & SEPARATOR STYLE ***/
+
+.section-header 
+{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-header > .section-tagline 
+{
+    color: #04DBC0;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: "PT Sans Narrow";
+    margin-bottom: 10px;
+}
+
+.section-header > .section-title 
+{
+    font-size: 40px;
+    line-height: 48px;
+    font-weight: 400;
+    letter-spacing: 0;
+    font-family: "PT Sans Narrow";
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.section-header > .separator 
+{
+    width: 150px;
+    background: #04DBC0;
+}
+
+/*** END TITLE & TAGLINE & SEPARATOR STYLE ***/
+
+/*** START HOME SECTION STYLE ***/
+
+.home_section
+{
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("../images/home_bg.jpg");
+    height:500px;
+    padding:150px 0px;
+}
+
+/*** END HOME SECTION STYLE ***/
+
+/*** START OUR SERVICES SECTION STYLE ***/
+
+.our-services
+{
+    background-color: #fff;
+    padding:50px 0px;
+}
+
+.single-feature 
+{
+    border-radius: 10px;
+    background-color: #f9f9ff;
+    padding: 30px;
+    margin-bottom: 30px;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+
+.single-feature:hover h4 
+{
+    color: #fab700;
+}
+
+.single-feature h4 
+{
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.single-feature:hover 
+{
+    box-shadow: -14.142px 14.142px 20px 0px rgb(157 157 157 / 50%);
+    cursor: pointer;
+}
+
+.single-feature h4 span  
+{
+    margin-right: 15px;
+}
+
+/*** END OUR SERVICES SECTION STYLE ***/
+
+/*** START ABOUT AREA SECTION STYLE ***/
+
+.about-area .left-area img
+{
+    width:100%;
+}
+
+.about-area .right-area h1 
+{
+    margin-bottom: 20px;
+}
+
+.my-btn 
+{
+    background-color: #fab700;
+    line-height: 42px;
+    padding-left: 40px;
+    padding-right: 40px;
+    border: none;
+    color: #fff;
+    display: inline-block;
+    font-weight: 500;
+    position: relative;
+    border: 1px solid transparent;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.about-area .right-area .bttn 
+{
+    background: #fab700;
+    color: #fff;
+    border: 1px solid #fff;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+
+.about-area>.row 
+{
+    justify-content: center;
+    align-items: center;
+}
+
+.about-area .right-area .my-btn:hover 
+{
+    background: transparent;
+    color: #fab700;
+    border-color: #fab700;
+}
+
+.about-area .right-area p 
+{
+    color: #777777;
+}
+
+.about-area .right-area p span 
+{
+    font-weight: 500;
+    color: #222;
+    font-size:14px
+}
+
+
+/*** END ABOUT AREA SECTION STYLE ***/
+
+/*** START OUR BRANDS SECTION STYLE ***/
+
+
+.our-brands
+{
+    padding:50px 0px;
+}
+
+.car-brands .car-brand
+{
+    min-height:330px;
+    border-radius: 5px;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    background-color: #f9f9f9;
+    transition-duration: 0.2s;
+}
+
+.car-brands .col-md-4
+{
+    margin-bottom: 20px;
+}
+
+.car-brands .car-brand:hover 
+{
+    -webkit-transform: translateY(-4px);
+    -moz-transform: translateY(-4px);
+    -o-transform: translateY(-4px);
+    -ms-transform: translateY(-4px);
+    transform: translateY(-4px);
+    -webkit-box-shadow: 0 22px 40px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0 22px 40px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 22px 40px rgba(0, 0, 0, 0.15);
+}
+
+.car-brands .car-brand .brand_name
+{
+    padding:10px 20px 10px 20px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    box-sizing: border-box;
+    color: #fff;
+    z-index: 1;
+}
+
+.car-brands .car-brand .brand_name>h3
+{
+    color:white;
+    font-size:24px;
+    font-weight: 700;
+    letter-spacing: 0px;
+    margin:0px;
+    
+}
+
+/*** END OUR BRANDS SECTION STYLE ***/
+
+/*** START FOOTER STYLE ***/
+
+.widget_section
+{
+    background-color: #222227;
+    padding: 100px 0;
+}
+
+.widget_social 
+{
+    display: block;
+    text-align: left;
+    padding:0px;
+    margin-top:30px;
+}
+
+.widget_social li 
+{
+    display: inline-block;
+}
+
+.widget_social li a 
+{
+    color: #777;
+    font-size: 12px;
+    margin-right: 20px;
+    transition-duration: 0.5s;
+}
+
+.widget_social li a:hover
+{
+    color:#04DBC0;
+}
+
+.footer_widget p 
+{
+    color: #999;
+}
+
+.footer_widget h3 
+{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0px;
+    margin-bottom:25px;
+}
+
+.subscribe_form 
+{
+    display: block;
+    text-align: center;
+    padding: 5px 0;
+}
+
+.subscribe_form .form_input 
+{
+    display: block;
+    color: #fff;
+    border: none;
+    font-size: 14px;
+    line-height: 50px;
+    padding: 0 10px;
+    float: left;
+    width: 100%;
+    margin-bottom: 10px;
+    transition: all 0.5s ease-in-out;
+}
+
+.opening_time li 
+{
+    color: #999;
+    line-height: 35px;
+}
+
+.subscribe_form .submit 
+{
+    background-color: #04DBC0;
+    color: #fff;
+    font-family: "Work Sans", sans-serif;
+    font-size: 15px;
+    font-weight: 100;
+    line-height: 50px;
+    display: inline-block;
+    padding: 0 10px;
+    width: 100%;
+    cursor: pointer;
+    border: none;
+    transition: all 0.5s ease-in-out;
+}
+
+.subscribe_form .submit:hover 
+{
+    background-color: #fab700;
+    transition: all 0.5s ease-in-out;
+}
+
+.footer_section 
+{
+    display: block;
+    background-color: #222227;
+    border-top: 1px solid #333;
+    padding: 15px 0;
+}
+
+.footer_section .copyright 
+{
+    font-size: 14px;
+    color: #ddd;
+}
+
+.footer_link
+{
+    display: block;
+    text-align: right;
+    margin:0px;
+    padding: 0px;
+}
+
+.footer_link li 
+{
+    display: inline-block;
+}
+
+.footer_link li a 
+{
+    font-family: "Work Sans",sans-serif;
+    color: #ddd;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-left: 20px;
+}
+
+.footer_widget ul.contact_info
+{
+    padding:0px;
+    margin:0px;
+    list-style:none;
+    color:#999;
+}
+.footer_widget ul.contact_info li
+{
+    padding:0.5rem 0;
+}
+
+.footer_widget ul.contact_info li i
+{
+    margin-right:15px;
+}
+
+/*** END FOOTER STYLE ***/
+
+/**** START RESERVATION SECTION STYLE ***/
+
+.reservation_section
+{
+    background-image: url('../images/reservation-bg.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    box-shadow: inset 0 0 0 1000px #2d2d2d7d;
+}
+
+.reservation_section .car-reservation-form
+{
+    box-shadow: 0 5px 40px rgb(0 0 0 / 10%);
+    padding: 10px 40px 40px;
+    background-color: white;
+}
+
+.car-reservation-form .text_header
+{
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 1.5;
+    margin: 20px 0px;
+    text-transform: uppercase;
+}
+
+.car-reservation-form label
+{
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.sbmt-bttn
+{
+    background: #04DBC0;
+    color: white;
+    padding: 10px 25px;
+    width: 100%;
+}
+
+
+.sbmt-bttn:hover
+{
+    background: #5856D6;
+    border-color: #5856D6;
+    color: white;
+}
+
+/**** END RESERVATION SECTION STYLE ***/
+
+/*** START CONTACT US SECTION STYLE ***/
+
+.contact-section
+{
+	padding:100px 0px;
+}
+
+.contact-info h2
+{
+	font-size: 36px;
+	color: #303133;
+	margin: 0 0 8px;
+	font-weight: 400;
+	line-height: 48px;
+	letter-spacing: -0.04em;
+}
+
+.contact-info h3 
+{
+    line-height: 28px;
+    margin-bottom: 20px;
+}
+
+.contact-info h4 
+{
+    font-size: 15px;
+    line-height: 28px;
+}
+
+.contact-form 
+{
+    background-color: #fff;
+    padding: 50px 40px;
+    -webkit-box-shadow: 0px 50px 100px 0px rgba(64, 1, 4, 0.1), 0px -6px 0px 0px rgba(248, 99, 107, 0.004);
+    box-shadow: 0px 50px 100px 0px rgba(64, 1, 4, 0.1), 0px -6px 0px 0px rgba(248, 99, 107, 0.004);
+    border-radius: 3px;
+}
+
+.form-control
+{
+    background-color: #fff;
+    border-radius: 0;
+    padding: 25px 10px;
+    box-shadow: none;
+    border: 2px solid #eee;
+}
+
+.form-control:focus 
+{
+    border-color: #04DBC0;
+    box-shadow: none;
+    outline: none;
+}
+
+.contact_send_btn
+{
+    background-color: #04DBC0;
+    color: #fff;
+    font-family: "Work Sans", sans-serif;
+    font-size: 15px;
+    font-weight: 100;
+    line-height: 50px;
+    display: inline-block;
+    padding: 0 10px;
+    width: 100%;
+    cursor: pointer;
+    border: none;
+    transition: all 0.5s ease-in-out;
+}
+
+.contact_send_btn:hover
+{
+    background-color: #fab700;
+    transition: all 0.5s ease-in-out;
+}
+
+
+/*** END CONTACT US SECTION STYLE ***/
+
+
+/**** START RESERVE PAGE (reserve.php) STYLE ****/
+
+.reserve-banner-section
+{
+    background-image: url('../images/reservation-banner.jpg');
+    min-height: 500px;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    box-shadow: inset 0 0 0 1000px #2d2d2d8c;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.reserve-banner-section > h2
+{
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+    font-family: "PT Sans Narrow";
+    font-size: 50px;
+}
+
+.items_tab {
+    border-radius: 4px;
+    background-color: white;
+    overflow: hidden;
+    box-shadow: 0 0 5px 0 rgb(60 66 87 / 4%), 0 0 10px 0 rgb(0 0 0 / 4%);
+}
+.itemListElement {
+    font-size: 14px;
+    line-height: 1.29;
+    border-bottom: solid 1px #e5e5e5;
+    cursor: pointer;
+    padding: 16px 12px 18px 12px;
+}
+
+.item_details {
+    width: auto;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+}
+.item_select_part {
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+.select_item_bttn {
+    width: 55px;
+    display: flex;
+    margin-left: 30px;
+    -webkit-box-pack: end;
+    justify-content: flex-end;
+}
+.item_label {
+    color: #04DBC0;
+    border-color: #04DBC0;
+    background: white;
+    font-size: 12px;
+    font-weight: 700;
+}
+.item_label:hover
+{
+	color: white;
+    border-color: #fab700;
+    background: #fab700;
+}
+.item_label.active
+{
+	color: white !important;
+    border-color: #fab700 !important;
+    background: #fab700 !important;
+}
+.item_label:focus
+{
+	box-shadow:none !important;
+}
+.radio_car_select {
+    position: absolute;
+    clip: rect(0,0,0,0);
+    pointer-events: none;
+}
+.car_reservation_section
+{
+    padding: 20px 0px 50px 0px;
+}
+.car_reservation_section .client_details
+{
+	box-shadow: 0 5px 40px rgb(0 0 0 / 10%);
+    padding: 20px;
+}
+
+.car_reservation_section .client_details label
+{
+	font-size: 13px;
+    font-weight: bold;
+}
+
+.reservation_cards p
+{
+	margin:0px;
+	padding: 20px 10px;
+	font-size:16px;
+}
+.reservation_cards p>span
+{
+	font-weight:600;
+}
+
+
+/**** END RESERVE PAGE (reserve.php) STYLE ****/
+
