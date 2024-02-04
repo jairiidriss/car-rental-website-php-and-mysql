@@ -18,13 +18,13 @@ The website has two sides; 1- The client-side and 2- The admin side.
 </div>
 <hr>
 <div>
-	<h3>Website presentation</h3>
+	<h3>Website DEMO</h3>
   	<ul>
 		<li>https://www.youtube.com/watch?v=_u02Sp3plBQ&t=5s&ab_channel=IdrissJairi</li>
 		<li>Admin Login Page: http://localhost/CarRentalWebsite/admin/</li>
 	</ul>
 	<p>
-		Username: jairiidriss
+		Username: admin
 		<br>
 		Password: 123456789
 	</p>
@@ -41,7 +41,3 @@ The website has two sides; 1- The client-side and 2- The admin side.
 	</ol>
 </div>
 <p>Questions and Clarifications: If you have any questions feel free to contact me: https://www.facebook.com/jairiidriss/</p>
-<hr>
-<h3>Car Rental Website in PHP and Mysql</h3>
-<img src =  "./car_rental_front.png" alt = "Car Rental Front">
-<img src =  "./car_rental_dashboard.png" alt = "Car Rental Dashboard">
