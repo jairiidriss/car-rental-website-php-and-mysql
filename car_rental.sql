@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.4
+-- version 5.2.1
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 29, 2021 at 12:14 AM
--- Server version: 10.4.17-MariaDB
--- PHP Version: 8.0.0
+-- Generation Time: Feb 04, 2024 at 02:09 AM
+-- Server version: 10.4.28-MariaDB
+-- PHP Version: 8.0.28
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -35,7 +35,7 @@ CREATE TABLE `cars` (
   `color` varchar(20) NOT NULL,
   `model` varchar(50) NOT NULL,
   `description` varchar(100) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 --
 -- Dumping data for table `cars`
@@ -57,7 +57,7 @@ CREATE TABLE `car_brands` (
   `brand_id` int(3) NOT NULL,
   `brand_name` varchar(50) NOT NULL,
   `brand_image` varchar(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 --
 -- Dumping data for table `car_brands`
@@ -69,8 +69,7 @@ INSERT INTO `car_brands` (`brand_id`, `brand_name`, `brand_image`) VALUES
 (3, 'Lexus', '2016-Lexus-RX-350-BM-01.jpg'),
 (4, 'Mercedes Benz', 'Mercedes-C-Class-Estate-1.jpg'),
 (5, 'MINI', '2016-MINI-Cooper-S-Clubman-ALL4.jpg'),
-(6, 'Porsche', 'P14_0596_a4_rgb-1.jpg'),
-(10, 'jkljkllkj;', '15182_memory-game-screenshot.PNG');
+(6, 'Porsche', 'P14_0596_a4_rgb-1.jpg');
 
 -- --------------------------------------------------------
 
@@ -82,7 +81,7 @@ CREATE TABLE `car_types` (
   `type_id` int(3) NOT NULL,
   `type_label` varchar(50) NOT NULL,
   `type_description` varchar(250) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 --
 -- Dumping data for table `car_types`
@@ -104,17 +103,14 @@ CREATE TABLE `clients` (
   `full_name` varchar(30) NOT NULL,
   `client_email` varchar(100) NOT NULL,
   `client_phone` varchar(20) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 --
 -- Dumping data for table `clients`
 --
 
 INSERT INTO `clients` (`client_id`, `full_name`, `client_email`, `client_phone`) VALUES
-(1, 'Idriss Jairi', 'driss52717jiri@gmail.com', '06345344232'),
-(2, 'Ahmed Oumenssour', 'ahmed_oum@gmail.com', '064534343'),
-(3, 'Chris', 'asdas@asfds.sdf', '18508232544'),
-(4, 'Bart', 'sdfsd@sfs.gh', '18508232533');
+(5, 'John Doe', 'john_doe@gmail.com', '0123456789');
 
 -- --------------------------------------------------------
 
@@ -132,7 +128,7 @@ CREATE TABLE `reservations` (
   `return_location` varchar(50) NOT NULL,
   `canceled` tinyint(1) NOT NULL DEFAULT 0,
   `cancellation_reason` varchar(250) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 --
 -- Dumping data for table `reservations`
@@ -142,7 +138,8 @@ INSERT INTO `reservations` (`reservation_id`, `client_id`, `car_id`, `pickup_dat
 (1, 1, 1, '2021-05-11', '2021-05-17', 'Agadir', 'Agadir', 0, NULL),
 (2, 2, 3, '2021-04-30', '2021-05-06', 'Agadir', 'Agadir', 0, NULL),
 (3, 3, 4, '2021-04-30', '2021-05-06', 'Agadir', 'Agadir', 1, 'Changed my mind! Sorry'),
-(4, 4, 4, '2021-04-29', '2021-05-02', 'Casablanca', 'Agadir', 0, NULL);
+(4, 4, 4, '2021-04-29', '2021-05-02', 'Casablanca', 'Agadir', 0, NULL),
+(5, 5, 4, '2024-03-02', '2024-03-05', 'Paris', 'Paris', 0, NULL);
 
 -- --------------------------------------------------------
 
@@ -157,14 +154,14 @@ CREATE TABLE `users` (
   `full_name` varchar(50) NOT NULL,
   `password` varchar(100) NOT NULL,
   `group_id` tinyint(1) NOT NULL DEFAULT 1
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 --
 -- Dumping data for table `users`
 --
 
 INSERT INTO `users` (`user_id`, `username`, `user_email`, `full_name`, `password`, `group_id`) VALUES
-(1, 'jairiidriss', 'test_test@gmail.com', 'Idriss Jairi', 'f7c3bc1d808e04732adf679965ccc34ca7ae3441', 0);
+(1, 'admin', 'admin.admin@gmail.com', 'Admin Admin', 'f7c3bc1d808e04732adf679965ccc34ca7ae3441', 0);
 
 --
 -- Indexes for dumped tables
@@ -232,13 +229,13 @@ ALTER TABLE `car_types`
 -- AUTO_INCREMENT for table `clients`
 --
 ALTER TABLE `clients`
-  MODIFY `client_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `client_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `reservations`
 --
 ALTER TABLE `reservations`
-  MODIFY `reservation_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `reservation_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `users`
