@@ -21,7 +21,7 @@ The website has two sides; 1- The client-side and 2- The admin side.
 	<h3>Website DEMO</h3>
   	<ul>
 		<li>https://www.youtube.com/watch?v=_u02Sp3plBQ&t=5s&ab_channel=IdrissJairi</li>
-		<li>Admin Login Page: http://localhost/CarRentalWebsite/admin/</li>
+		<li>Admin Login Page: http://localhost/car-rental-website-php-and-mysql/admin/</li>
 	</ul>
 	<p>
 		Username: admin
